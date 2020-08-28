@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Login Page">
+    <test name="Login Test">
+        <classes>
+            <class name="tests.LogInPageTest">
+                <methods>
+                    <include name="verifyLogInStandardUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+<!-- // We need runners package (xml file) to run all tests inside the class -->
+<!-- // If we put <methods> </methods> inside class we can choose particular tests to run inside particular methods-->
